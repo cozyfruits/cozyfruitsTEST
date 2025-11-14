@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="xp.css" />
+    
+
+        <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
+    background: #008080;     /* optional: XP teal background */
+  }
+
+  .window {
+    margin: 5px !important; /* override inline margin */
+    max-width: 90vw;      /* prevent it from overflowing */
+    box-sizing: border-box;
+  }
+
+  /* Make sure the player scales down on mobile */
+  #player {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+
+    <script src="playerjs2.js" type="text/javascript"></script>
+    
+    <title>NOW</title>
+
+</head>
+
+  <body>
+
+    <div class="window" style="margin: 32px; width: 300px">
+      <div class="title-bar">
+        <div class="title-bar-text">
+          SPRY!
+        </div>
+
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body" style="margin-bottom: 20px"> 
+
+
+        
+      
+    
+        <div id="player"></div>
+
+      
+
+        </section>
+
+      </div>
+
+     </div>
+
+     
+<div class="window" style="width: 400px">
+  <div class="title-bar">
+    <div class="title-bar-text">:)</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+
+  <menu role="tablist">
+  <button aria-selected="true" aria-controls="download">Download</button>
+  <button aria-controls="stream">Stream</button>
+  <button aria-controls="lyrics">Lyrics</button>
+  <button aria-controls="credits">Credits</button>
+  </menu>
+
+
+            <!-- OPTIONS TO DOWNLOAD  -->
+    <article role="tabpanel" id="download">
+        <p>Select a download option:</p>
+        <fieldset>
+          <legend>THE ENTIRE THING</legend>
+          <div class="field-row">
+            <input id="radio29" type="radio" name="fieldset-example2">
+            <label for="radio29">SPRY EP (.zip)</label>
+          </div>
+  
+        </fieldset>
+
+        <fieldset>
+          <legend>À LA CARTE</legend>
+          
+          <div class="field-row">
+            <input id="radio30" type="radio" name="fieldset-example2">
+            <label for="radio30">lack/lustre</label>
+          </div>
+
+          <div class="field-row">
+            <input id="radio31" type="radio" name="fieldset-example2">
+            <label for="radio31">Pal</label>
+          </div>
+          <div class="field-row">
+            <input id="radio32" type="radio" name="fieldset-example2">
+            <label for="radio32">Look(*Stare)</label>
+          </div>
+            <div class="field-row">
+            <input id="radio33" type="radio" name="fieldset-example2">
+            <label for="radio33">Skyglide</label>
+                      </div>
+            <div class="field-row">
+            <input id="radio34" type="radio" name="fieldset-example2">
+            <label for="radio34">CORD2</label>
+          </div>
+        </fieldset>
+
+        <section class="field-row">
+          <button>DOWNLOAD</button>
+          <label>It's all yours!!!!!!!!!!!!!</label>
+        </section>
+      </article>
+
+
+        <!-- OPTIONS TO STREAM  -->
+    <article role="tabpanel" hidden id="stream">
+       <p>Select a streaming option:</p>
+        <fieldset>
+          <legend>DRONE STRIKE</legend>
+          <div class="field-row">
+            <input id="radio35" type="radio" name="fieldset-example2">
+            <label for="radio35">Apple Music</label>
+
+          </div>
+                   <div class="field-row">
+            <input id="radio36" type="radio" name="fieldset-example2">
+            <label for="radio36">Bandcamp</label>
+          </div>
+
+                   <div class="field-row">
+            <input id="radio37" type="radio" name="fieldset-example2">
+            <label for="radio37">Spotify</label>
+          </div>
+
+
+                   <div class="field-row">
+            <input id="radio38" type="radio" name="fieldset-example2">
+            <label for="radio38">Tidal</label>
+          </div>
+
+                      <div class="field-row">
+            <input id="radio39" type="radio" name="fieldset-example2">
+            <label for="radio39">YouTube</label>
+          </div>
+  
+  
+        </fieldset>
+                <section class="field-row">
+          <button>GO!</button>
+          <label>Opens a new tab</label>
+
+    </article>
+
+
+
+        <!-- LYRICS  -->
+    <article role="tabpanel" hidden id="lyrics">
+      <p>
+     <fieldset>
+          <legend>COOOOOL</legend>
+          
+          <div class="field-row">
+            <input id="radio42" type="radio" name="fieldset-example2">
+            <label for="radio42">lack/lustre</label>
+          </div>
+
+          <div class="field-row">
+            <input id="radio43" type="radio" name="fieldset-example2">
+            <label for="radio43">Pal</label>
+          </div>
+          <div class="field-row">
+            <input id="radio44" type="radio" name="fieldset-example2">
+            <label for="radio44">Look(*Stare)</label>
+          </div>
+            <div class="field-row">
+            <input id="radio45" type="radio" name="fieldset-example2">
+            <label for="radio45">Skyglide</label>
+                      </div>
+            <div class="field-row">
+            <input id="radio46" type="radio" name="fieldset-example2">
+            <label for="radio46">CORD2</label>
+          </div>
+        </fieldset>
+
+        <section class="field-row">
+          <button>SHOW</button>
+          <label></label>
+        </section>
+    </article>
+
+
+            <!-- CREDITS CONTACT  -->
+  <article role="tabpanel" hidden id="credits">
+      <p>Composed, Written, Produced, & Performed by Thomas Hsu (Cozyfruits)</p>
+    <button onclick="window.open('https://www.instagram.com/cozyfruits/', '_blank')">
+    REACH ME
+    </button>
+  </article>
+
+
+
+    <section class="field-row" style="justify-content: flex-end">
+      <button>OK</button>
+      <button>Cancel</button>
+    </section>
+  </div>
+</div>
+        
+        
+      </div>
+    </div>
+    
+  </body>
+
+ 
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  let highestZ = 10; // track z-index
+  const windows = document.querySelectorAll(".window");
+
+  windows.forEach(win => {
+    const titleBar = win.querySelector(".title-bar");
+    if (!titleBar) return;
+
+    // Bring to front when clicked
+    win.addEventListener("mousedown", () => {
+      highestZ++;
+      win.style.zIndex = highestZ;
+    });
+
+    // Dragging setup
+    let offsetX = 0, offsetY = 0, isDragging = false;
+
+    titleBar.addEventListener("mousedown", e => {
+      isDragging = true;
+      offsetX = e.clientX - win.offsetLeft;
+      offsetY = e.clientY - win.offsetTop;
+      highestZ++;
+      win.style.zIndex = highestZ;
+      titleBar.style.cursor = "grabbing";
+    });
+
+    document.addEventListener("mousemove", e => {
+      if (!isDragging) return;
+      win.style.position = "absolute";
+      win.style.left = `${e.clientX - offsetX}px`;
+      win.style.top = `${e.clientY - offsetY}px`;
+    });
+
+    document.addEventListener("mouseup", () => {
+      isDragging = false;
+      titleBar.style.cursor = "default";
+    });
+  });
+});
+</script>
+
+
+</html>
